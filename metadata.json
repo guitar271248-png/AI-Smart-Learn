@@ -1,0 +1,6 @@
+{
+  "name": "AI Smart Learn — เรียนรู้ AI ใช้อย่างฉลาด",
+  "description": "เว็บแอปพลิเคชันเพื่อการเรียนรู้ด้าน AI Literacy สำหรับนักเรียนและนักศึกษา ส่งเสริมการใช้ AI อย่างถูกต้อง ปลอดภัย และมีความรับผิดชอบ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
