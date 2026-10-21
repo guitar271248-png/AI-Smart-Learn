@@ -2,12 +2,13 @@ import React from 'react';
 import { ArrowRight, BookOpen, ShieldCheck, Trophy, Sparkles, CheckCircle2, Cpu, Wand2, ShieldAlert, Lock, BarChart3 } from 'lucide-react';
 import { useProgress } from '../context/ProgressContext';
 import { LESSONS_DATA } from '../data/lessonsData';
+import heroImage from '../assets/images/hero_ai_learning_robot_1792598192930.jpg';
 
 interface HomePageProps {
   onNavigate: (tab: string, lessonId?: number) => void;
 }
 
-const HERO_IMAGE_PATH = '/src/assets/images/hero_ai_learning_robot_1792598192930.jpg';
+
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const { progress, overallPercentage, isLessonCompleted, currentUser } = useProgress();
@@ -93,7 +94,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl group">
               <img
-                src={HERO_IMAGE_PATH}
+                src={heroImage} 
                 alt="AI Smart Learn Assistant Robot and Students"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
